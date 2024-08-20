@@ -1,6 +1,6 @@
 import { createContext } from "react";
-import { mixedProduct } from "../Component/NavDataMapping/mixedProduct";
-import { nykaa, sugerpop } from "../Component/NavDataMapping/Data";
+import { mixedProduct } from "../Component/API-Data/mixedProduct";
+import { nykaa, sugerpop } from "../Component/API-Data/Data";
 
 //  Create Context
 const NailContext = createContext();
