@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AllProductsList from "./Pages/AllProductsList";
+import Navbar from "./Component/Navbar/Navbar";
+import Footer from "./Component/Footer/Footer";
+import NGiftApp from "./Pages/NGiftApp";
+import NStoreEvent from "./Pages/NStoreEvent";
+import NGiftCard from "./Pages/NGiftCard";
+import NHelp from "./Pages/NHelp";
+import SugerpopList from "./Component/SingleBrand/NailPaint/SugerpopList/SugerpopList";
+import NykaaList from "./Component/SingleBrand/NailPaint/NykaaList/NykaaList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/GiftApp" element={<NGiftApp/>} />
+          <Route path="/Store&Events" element={<NStoreEvent />} />
+          <Route path="/GiftCard" element={<NGiftCard />} />
+          <Route path="/Help" element={<NHelp/>} />
+          <Route path="/AllPD" element={<AllProductsList />} />
+          <Route path="/SugerPoP" element={<SugerpopList/>} />
+          <Route path="/Nykaa" element={<NykaaList/>} />
+        </Routes>
+        <Footer/>
+      </Router>
+    </>
   );
 }
 

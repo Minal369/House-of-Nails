@@ -1,0 +1,156 @@
+.getappmainconatiner {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 600px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    background: url(https://cdnr.nykaa.com/assets/desktop/images/install_app/install_app_bg.jpg) 
+       no-repeat top center / cover;
+  }
+  
+  .getappleftconatiner {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .getappborder {
+    /* border: 1px solid black; */
+    width: 50%;
+    margin-left: 24%;
+  }
+  
+  .getapp {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .getapptitle1 h6 {
+    /* border: 1px solid black; */
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    /* color: #3f414d; */
+    color: #000;
+  }
+  
+  .getapptitle2 p {
+    /* border: 1px solid black; */
+    font-size: 16px;
+    font-weight: 500;
+    /* color: #3f414d; */
+    color: #000;
+  }
+  
+  .downloadlink {
+    /* border: 1px solid black; */
+    margin-top: 80px;
+    margin-bottom: 5%;
+  }
+  
+  .downloadname {
+    /* border: 1px solid black; */
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    /* color: #3f414d; */
+    color: #000;
+  }
+  
+  .input {
+    /* border: 1px solid black; */
+    background-color: #fff;
+    width: 80%;
+    padding: 7px 0px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input input {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    width: 65%;
+    height: 40px;
+    padding-left: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  .input button {
+    border: 0;
+    outline: 0;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    /* color: #fff; */
+    color: #000;
+    background-color: #d4d5dd;
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+  }
+  
+  .appstore .storename {
+    /* border: 1px solid black; */
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #3f414d; */
+    color: #000;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .appbtn {
+    /* border: 1px solid black; */
+    width: 104.2%;
+    display: flex;
+    gap: 4%;
+  }
+  
+  .appbtn .appbtns {
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    /* border: 1px solid #000; */
+  }
+  
+  .appbtns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .appbtns i {
+    font-size: 25px;
+    color: #fc2779;
+  }
+  
+  .appbtn .appbtns p {
+    margin-bottom: 0%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 4px;
+    /* border: 1px solid black; */
+  }
+  
+  .getapprightconatiner {
+    /* border: 1px solid black; */
+    width: 35%;
+    margin-left: -6.5%;
+  }
+  
+  .mobappimg img {
+    width: 620px;
+    padding: 40px;
+  }
+  

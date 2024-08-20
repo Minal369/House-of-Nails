@@ -1,0 +1,133 @@
+.productlists-cards-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 1%;
+  }
+  
+  .cardlayout {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 435px;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .cardlayout .hearts {
+    position: absolute;
+    padding: 15px 0px;
+    right: 5%;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fc2779;
+  }
+  
+  .cardlayout img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 30px;
+    margin-left: 5%;
+  }
+  
+  .carddesc {
+    padding: 5px 15px;
+  }
+  
+  .carddesc p {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .cardprice {
+    padding: 1px 20px;
+  }
+  
+  .cardprice p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .mrp {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .mrp p {
+    font-size: 15px;
+  }
+  
+  .mrp-price {
+    text-decoration: line-through;
+    color: rgba(0, 19, 37, 0.64);
+    /* font-weight: 600; */
+  }
+  
+  .mrp-price p {
+    font-size: 15px;
+  }
+  
+  .price .mrp {
+    color: rgba(0, 19, 37, 0.64);
+  }
+  
+  .mrp-price i {
+    text-decoration: line-through;
+    font-size: 17.9px;
+    color: rgba(0, 19, 37, 0.64);
+  }
+  
+  .offer {
+    color: #fc2779;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  /* -------direct hovering for shopping bag--------- */
+  .cardsbtns p:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 1px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 0px 0px 5px 5px;
+    /* transition: 0.1s linear; */
+    /* color: #fff; */
+    background-color: #fc2779;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .cardsbtns p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 33px;
+    font-weight: 0;
+    color: #fff;
+  }
+  
