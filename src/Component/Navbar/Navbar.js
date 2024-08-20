@@ -6,47 +6,47 @@ import logo3 from "../../img/navbaroffer.jpg";
 import img1 from "../../img/buffing-mc.jpg";
 import img2 from "../../img/lyn-nail.jpg";
 import img3 from "../../img/uv-led.jpg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       {/* ---------------------------Top Navbar----------------------------- */}
       <div className="top-nav-container">
-        <NavLink to="" />
         <div className="top-nav-left">
-          <p>BEAUTY BONANZLink toGet Your Amazing Deals!</p>
+          <NavLink to="/">
+            <p>BEAUTY BONANZLink toGet Your Amazing Deals!</p>
+          </NavLink>
         </div>
-
         <div className="top-nav-right">
           <ul>
-            <NavLink to="/GiftApp" />
-            <li>
-              <i className="fa-solid fa-mobile-screen nav-icons"></i>
-              <p className="nav-name">Get App</p>
-            </li>
-            <Link />
+            <NavLink to="/GiftApp">
+              <li>
+                <i className="fa-solid fa-mobile-screen nav-icons"></i>
+                <p className="nav-name">Get App</p>
+              </li>
+            </NavLink>
             |
-            <NavLink to="/Store&Events" />
-            <li>
-              <i className="fa-solid fa-location-dot nav-icons"></i>
-              <p className="nav-name">Store & Events</p>
-            </li>
-            <Link />
+            <NavLink to="/Store&Events">
+              <li>
+                <i className="fa-solid fa-location-dot nav-icons"></i>
+                <p className="nav-name">Store & Events</p>
+              </li>
+            </NavLink>
             |
-            <NavLink to="/GiftCard" />
-            <li>
-              <i className="fa-solid fa-gift nav-icons"></i>
-              <p className="nav-name">Gift Cards</p>
-            </li>
-            <Link />
+            <NavLink to="/GiftCard">
+              <li>
+                <i className="fa-solid fa-gift nav-icons"></i>
+                <p className="nav-name">Gift Cards</p>
+              </li>
+            </NavLink>
             |
-            <NavLink to="/Help" />
-            <li>
-              <i className="fa-solid fa-circle-question nav-icons"></i>
-              <p className="nav-name">Help</p>
-            </li>
-            <Link />
+            <NavLink to="/Help">
+              <li>
+                <i className="fa-solid fa-circle-question nav-icons"></i>
+                <p className="nav-name">Help</p>
+              </li>
+            </NavLink>
           </ul>
         </div>
       </div>
@@ -55,6 +55,7 @@ const Navbar = () => {
 
       <div className="mid-nav-container">
         <img src={logo1} alt="" />
+
         <div className="mid-nav-search">
           <i className="fa-solid fa-magnifying-glass icon"></i>
           <input type="text" placeholder="Search for Nail-Paints" />
