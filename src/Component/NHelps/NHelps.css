@@ -1,0 +1,293 @@
+.helpcentermaincontainer {
+    /* border: 1px solid black; */
+    width: 63%;
+    height: 700px;
+    background-color: #fff;
+    margin-left: 18.5%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(173, 173, 173, 1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(173, 173, 173, 1);
+    box-shadow: 0px 0px 5px 5px rgba(173, 173, 173, 1);
+  }
+  
+  .helpcontainer {
+    /* border: 1px solid black; */
+    margin: 10%;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 96%;
+  }
+  
+  /* top conatiner */
+  
+  .helptopconatiner {
+    border: 1px solid rgb(201, 198, 198);
+    border-radius: 5px;
+    margin: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .helptop {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+  }
+  
+  .topcontainer1 {
+    /* border: 1px solid black; */
+    font-size: 25px;
+    padding: 8px;
+    color: rgb(232, 0, 113);
+  }
+  
+  .topcontainer2 {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topcontainer2 p {
+    /* border: 1px solid black; */
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .topcontainer2 span {
+    /* border: 1px solid black; */
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 19, 37, 0.64);
+  }
+  
+  .topconatinerbtn {
+    /* border: 1px solid black; */
+    padding: 10px;
+  }
+  
+  .topconatinerbtn button {
+    border: 0;
+    outline: 0;
+    /* border: 1px solid #000; */
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: rgb(232, 0, 113);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  /*---------------------- middle container -----------------*/
+  
+  .helpmiddleconatiner {
+    /* border: 1px solid black; */
+    width: 17%;
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+  
+  .middercontenrtitile p {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 2.5px;
+  }
+  
+  .middboxrow1 {
+    /* border: 1px solid black; */
+    width: 935px;
+  }
+  
+  .middborderbox {
+    /* border: 1px solid black; */
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 18.5px;
+  }
+  .bags {
+    border: 1px solid rgb(201, 198, 198);
+    width: 32%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    cursor: pointer;
+    /* gap: 5%; */
+  }
+  
+  .bags:hover {
+    background: rgba(0, 19, 37, 0.16);
+  }
+  
+  .shoppingbags1 {
+    /* border: 1px solid black; */
+    font-size: 45px;
+    margin-top: 5%;
+    position: relative;
+    color: gray;
+  }
+  
+  .shoppingbags2 {
+    position: absolute;
+    left: 33.6%;
+    top: 46.6%;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(232, 0, 113);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .shoppingtag {
+    position: absolute;
+    transform: rotate(75deg);
+    left: 50.5%;
+    top: 46.7%;
+    font-size: 22px;
+    color: rgb(232, 0, 113);
+  }
+  
+  .shoppinginvoice {
+    position: absolute;
+    left: 67.3%;
+    top: 46.5%;
+    font-size: 20px;
+    color: rgb(232, 0, 113);
+  }
+  
+  .shoppingrupee {
+    position: absolute;
+    left: 34%;
+    top: 62%;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(232, 0, 113);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .shoppingcircle {
+    position: absolute;
+    left: 50.5%;
+    top: 62%;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(232, 0, 113);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .shoppinginfo {
+    position: absolute;
+    left: 67%;
+    top: 62.1%;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(232, 0, 113);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .bag1title p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* bottom container */
+  
+  .helpbottomconatiner {
+    /* border: 1px solid black; */
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+  
+  .bottomname1 {
+    /* border: 1px solid black; */
+    width: 20%;
+    padding: 10px 0px;
+    margin-bottom: 1%;
+  }
+  
+  .bottomname1 p {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .bottomname2 {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .bottomname2:hover{
+      background: rgba(0, 19, 37, 0.16);
+  }
+  
+  .msg {
+    /* border: 1px solid black; */
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 2.5%;
+  }
+  
+  .msg i {
+    /* border: 1px solid black; */
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  
+  .msg p {
+    /* border: 1px solid black; */
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .msgarrow{
+      /* border: 1px solid black; */
+      padding: 5px;
+  }
+  
+  .msgarrow i{
+      font-size: 18px;
+  }

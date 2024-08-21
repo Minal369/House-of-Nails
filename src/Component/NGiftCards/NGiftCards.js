@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import "./NGiftCards.css";
 import img1 from "../../img/giftcard.png";
 import img2 from "../../img/giftcard2.png";
@@ -6,8 +6,8 @@ import { giftcardmapping } from "../../Component/API-Data/GiftCardMap";
 
 const NGiftCards = () => {
   return (
-   <>
-    <div className="giftnavbarbaground">
+    <>
+      <div className="giftnavbarbaground">
         <div className="giftcardnavbar">
           <div className="giftcardimg">
             <div className="giftcardimg1">
@@ -19,8 +19,9 @@ const NGiftCards = () => {
           </div>
         </div>
       </div>
-        {/* -----------------------giftcard nav list---------------------- */}
-        <div className="giftcardlist">
+      {/* <hr /> */}
+      {/* -----------------------giftcard nav list---------------------- */}
+      <div className="giftcardlist">
         <div className="giftlist1">
           <div className="giftlist">
             <ul class="nav nav-underline">
@@ -268,8 +269,8 @@ const NGiftCards = () => {
           </div>
         </div>
       </div>
-   </>
-  )
+    </>
+  );
 }
 
 export default NGiftCards
