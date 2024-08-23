@@ -1,12 +1,19 @@
 import React, { useContext } from "react";
-import { NailContext } from "../../Context/ProductContext";
 import AllItemsLayout from "../AllItemsLayout/AllItemsLayout";
+import { NailContext } from "../../Context/ProductContext";
+
 
 const AllItemsMap = () => {
-  const {mixedProduct} = useContext(NailContext)
+    const {isLoading,  NailProducts} = useContext(NailContext)
+    console.log(NailProducts);
+    
+
+    if (isLoading) {
+        return <div>....Loading</div>
+    }
   return (
     <>
-      {mixedProduct.map((mixedPD) => {
+      {NailProducts.map((mixedPD) => {
         return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
       })}
     </>

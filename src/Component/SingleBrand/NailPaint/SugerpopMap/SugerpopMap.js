@@ -1,12 +1,17 @@
 import React, { useContext } from "react";
-import { NailContext } from "../../../../Context/ProductContext";
 import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
+import { NailContext } from "../../../../Context/ProductContext";
 
 const SugerpopMap = () => {
-  const { sugerpop } = useContext(NailContext);
+    const {isLoading,SugerPOP} = useContext(NailContext)
+    // console.log(SugerPOP);
+    
+    if (isLoading){
+        return <div>....Loading</div>
+    }
   return (
     <>
-      {sugerpop.map((mixedPD) => {
+      {SugerPOP.map((mixedPD) => {
         return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
       })}
       

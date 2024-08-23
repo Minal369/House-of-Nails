@@ -24,10 +24,10 @@ const NGiftCards = () => {
       <div className="giftcardlist">
         <div className="giftlist1">
           <div className="giftlist">
-            <ul class="nav nav-underline">
-              <li class="nav-item">
+            <ul className="nav nav-underline">
+              <li className="nav-item">
                 <a
-                  class="nav-link active"
+                  className="nav-link active"
                   aria-current="page"
                   href="#egiftcard"
                   data-bs-toggle="tab"
@@ -35,13 +35,13 @@ const NGiftCards = () => {
                   E-Gift Card
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#howtouse" data-bs-toggle="tab">
+              <li className="nav-item">
+                <a className="nav-link" href="#howtouse" data-bs-toggle="tab">
                   How To Use
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#termscondition" data-bs-toggle="tab">
+              <li className="nav-item">
+                <a className="nav-link" href="#termscondition" data-bs-toggle="tab">
                   Terms And Conditions
                 </a>
               </li>

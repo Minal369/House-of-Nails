@@ -129,8 +129,8 @@ const Footer = () => {
         </div>
       </div>
 
-       {/*----------------- footer 3rd --------------------*/}
-       <div className="footer3rd">
+      {/*----------------- footer 3rd --------------------*/}
+      <div className="footer3rd">
         <div className="footer">
           <div className="freeship">
             <div className="free-shipping-icons">
@@ -174,15 +174,15 @@ const Footer = () => {
             <p>Show us some love ❤ on social media</p>
           </div>
           <div className="media-icons">
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-youtube"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-square-pinterest"></i>
+            <i className="fa-brands fa-square-instagram"></i>
+            <i className="fa-brands fa-square-facebook"></i>
+            <i className="fa-brands fa-square-youtube"></i>
+            <i className="fa-brands fa-square-twitter"></i>
+            <i className="fa-brands fa-square-pinterest"></i>
           </div>
-        </div>
-        <div className="myname">
-          <p>Completed by @Minal</p>
+          <div className="myname">
+            <p>Completed by @Minal</p>
+          </div>
         </div>
       </div>
     </>

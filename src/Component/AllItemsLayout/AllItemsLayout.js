@@ -1,17 +1,15 @@
 import React from "react";
 import "./AllItemsLayout.css";
 
-const AllItemsLayout = ({imgSrc, titles, MRP, mrp, offer, price }) => {
+const AllItemsLayout = (mixedPD) => {
+  const { imgSrc, titles, MRP, mrp, offer, price } = mixedPD;
   return (
     <>
       <div className="productlists-cards-container">
         <div className="cardlayout">
           <i className="fa-regular fa-heart hearts"></i>
           <div className="card-img">
-            <img
-              src={imgSrc}
-              alt=""
-            />
+            <img src={imgSrc} alt="" />
           </div>
           <div className="carddesc">
             <p>{titles}</p>

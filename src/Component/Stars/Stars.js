@@ -7,7 +7,7 @@ const Stars = ({rating}) => {
     <>
       <div>
         {[...Array(totalStars)].map((_, index)=>(
-            <span key={index} style={{color: index < rating ? ' #fc2779' : 'lightpink' }}><i class="fa-solid fa-star"></i></span>
+            <span key={index} style={{color: index < rating ? ' #fc2779' : 'lightpink' }}><i className="fa-solid fa-star"></i></span>
         ))}
       </div>
     </>

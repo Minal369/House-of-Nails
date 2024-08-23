@@ -3,10 +3,15 @@ import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
 import { NailContext } from "../../../../Context/ProductContext";
 
 const NykaaMap = () => {
-  const { nykaa } = useContext(NailContext);
+  const {isLoading, Nykaa } = useContext(NailContext);
+//   console.log(Nykaa);
+  
+  if (isLoading) {
+    return <div>....Loading</div>
+  }
   return (
     <>
-      {nykaa.map((mixedPD) => {
+      {Nykaa.map((mixedPD) => {
         return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
       })}
     </>

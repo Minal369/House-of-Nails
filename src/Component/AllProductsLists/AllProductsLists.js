@@ -45,7 +45,7 @@ const AllProductsLists = () => {
         <div className="allpdSlick">
           <div className="slickHomepage">
             <Slider
-              autoplay={true}
+              autoplay={false}
               autoplayspeed={1000}
               dots={true}
               dotsClass="slick-dots line-indicator"

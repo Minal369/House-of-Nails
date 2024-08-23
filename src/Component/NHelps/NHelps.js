@@ -106,7 +106,7 @@ const NHelps = () => {
                   <p>Write to us</p>
                 </div>
                 <div className="msgarrow">
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
                 </div>
               </div>
             </div>
