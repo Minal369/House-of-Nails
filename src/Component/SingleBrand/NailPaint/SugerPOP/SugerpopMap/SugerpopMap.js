@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
-import { NailContext } from "../../../../Context/ProductContext";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
+import { NailContext } from "../../../../../Context/ProductContext";
+import React, { useContext } from "react";;
 
 const SugerpopMap = () => {
     const {isLoading,SugerPOP} = useContext(NailContext)

@@ -1,8 +1,9 @@
 import React from "react";
 import "./AllItemsLayout.css";
+import Stars from "../Stars/Stars";
 
 const AllItemsLayout = (mixedPD) => {
-  const { imgSrc, titles, MRP, mrp, offer, price } = mixedPD;
+  const { imgSrc, titles, MRP, mrp, offer, price, rating } = mixedPD;
   return (
     <>
       <div className="productlists-cards-container">
@@ -27,6 +28,9 @@ const AllItemsLayout = (mixedPD) => {
             <p>
               <i className="fa-solid fa-indian-rupee-sign rupees">{price}</i>
             </p>
+          </div>
+          <div className="rating">
+            <Stars rating={rating} />
           </div>
           <div className="cardsbtns">
             <p>Add to Bag</p>

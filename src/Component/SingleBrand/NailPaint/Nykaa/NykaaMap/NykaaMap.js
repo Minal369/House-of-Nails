@@ -1,6 +1,6 @@
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
+import { NailContext } from "../../../../../Context/ProductContext";
 import React, { useContext } from "react";
-import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
-import { NailContext } from "../../../../Context/ProductContext";
 
 const NykaaMap = () => {
   const {isLoading, Nykaa } = useContext(NailContext);

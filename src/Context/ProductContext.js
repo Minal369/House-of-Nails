@@ -12,8 +12,16 @@ const initialState = {
   isLoading: false,
   isError: false,
   NailProducts: [],
+  Brand: [],
   SugerPOP: [],
   Nykaa: [],
+  Lakme: [],
+  Debelle: [],
+  JucieGloss: [],
+  Elle18: [],
+  KayBeauty: [],
+  Faces: [],
+  Colorbar: [],
 };
 
 const AppProvider = ({ children }) => {

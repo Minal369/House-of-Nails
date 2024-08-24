@@ -1,7 +1,7 @@
 import React from 'react'
 import NykaaMap from '../NykaaMap/NykaaMap'
-import FilterSection from '../../../FilterSection/FilterSection'
-import img1 from "../../../../img/Nykaascarousel1.jpeg";
+import FilterSection from '../../../../FilterSection/FilterSection'
+import img1 from "../../../../../img/Nykaascarousel1.jpeg";
 
 const NykaaList = () => {
   return (

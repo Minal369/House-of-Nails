@@ -84,8 +84,9 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="bottom-nav-brand">
-          <p>BRANDS</p>
-
+          <NavLink to="/Brand" style={{ color: "inherit" }}>
+            <p>BRANDS</p>
+          </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
           <div className="nav-brandlist">
             <NavLink to="/SugerPoP">
@@ -94,110 +95,157 @@ const Navbar = () => {
             <NavLink to="/Nykaa">
               <p>Nykaa</p>
             </NavLink>
-            <p>Lakme</p>
-
-            <p>DeBelle Gell Nail Paint</p>
-
-            <p>Jucie Gloss</p>
-
-            <p>Elle18</p>
-
-            <p>Kay Beauty</p>
-
-            <p>Faces</p>
-
-            <p>Colorbar</p>
+            <NavLink to="/Lakme">
+              <p>Lakme</p>
+            </NavLink>
+            <NavLink to="/DeBelle">
+              <p>DeBelle Gell Nail Paint</p>
+            </NavLink>
+            <NavLink to="/Jucie-Gloss">
+              <p>Jucie Gloss</p>
+            </NavLink>
+            <NavLink to="/Elle18">
+              <p>Elle18</p>
+            </NavLink>
+            <NavLink to="/Kay-Beauty">
+              <p>Kay Beauty</p>
+            </NavLink>
+            <NavLink to="/Face">
+              <p>Faces</p>
+            </NavLink>
+            <NavLink to="/Colorbar">
+              <p>Colorbar</p>
+            </NavLink>
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <p>STICKERS</p>
-
+          <NavLink to="/AllStickers">
+            <p>STICKERS</p>
+          </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
           <div className="nav-sticker">
-            <p>Letter Stickers</p>
-
-            <p>Mickey Mouse Stickers</p>
-
-            <p>Flower Stickers</p>
-
-            <p>Fruit Stickers</p>
-
-            <p>Leafy & Modern Stickers</p>
-
-            <p>3D Stickers</p>
+            <NavLink to="/LetterSticker">
+              <p>Letter Stickers</p>
+            </NavLink>
+            <NavLink to="/MickeyMouseStickers">
+              <p>Mickey Mouse Stickers</p>
+            </NavLink>
+            <NavLink to="/FlowerStickers">
+              <p>Flower Stickers</p>
+            </NavLink>
+            <NavLink to="/FruitStickers">
+              <p>Fruit Stickers</p>
+            </NavLink>
+            <NavLink to="/Leaf&ModernStickers">
+              <p>Leafy & Modern Stickers</p>
+            </NavLink>
+            <NavLink to="/3DStickers">
+              <p>3D Stickers</p>
+            </NavLink>
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <p>TOOL KIT</p>
-
+          <NavLink to="/AllToolkit">
+            <p>TOOL KIT</p>
+          </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
           <div className="nav-nailtoolkit">
-            <p>Flat Nail Clippers</p>
-
-            <p>Oblique Nail Clippers</p>
-
-            <p>Small Nail Clippers</p>
-
-            <p>Dead Skin Plier</p>
-
-            <p>Nail File</p>
-
-            <p>Double pick</p>
-
-            <p>Dead Skin Push</p>
-
-            <p>Dead Skin Shovel</p>
+            <NavLink to="/FlatNailClippers">
+              <p>Flat Nail Clippers</p>
+            </NavLink>
+            <NavLink to="/ObliqueNailClipper">
+              <p>Oblique Nail Clippers</p>
+            </NavLink>
+            <NavLink to="/SmallNailClipper">
+              <p>Small Nail Clippers</p>
+            </NavLink>
+            <NavLink to="/DeadSkinPiler">
+              <p>Dead Skin Plier</p>
+            </NavLink>
+            <NavLink to="/NailFile">
+              <p>Nail File</p>
+            </NavLink>
+            <NavLink to="/Doublepick">
+              <p>Double pick</p>
+            </NavLink>
+            <NavLink to="/DeadSkinPush">
+              <p>Dead Skin Push</p>
+            </NavLink>
+            <NavLink to="/DeadSkinShovel">
+              <p>Dead Skin Shovel</p>
+            </NavLink>
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <p>JWELLERY</p>
-
+          <NavLink to="/AllJwellery">
+            <p>JWELLERY</p>
+          </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
           <div className="nav-jwellery">
-            <p>Metal Nails Beads</p>
-
-            <p>Bow-Knot Crystal</p>
-
-            <p>3D Shell Flower</p>
-
-            <p>Pink Crystal Stone</p>
-
-            <p>Pearl Beads </p>
-
-            <p>3D Metal Alloy Star Bead</p>
+            <NavLink to="/MetalNailsBeads">
+              <p>Metal Nails Beads</p>
+            </NavLink>
+            <NavLink to="/BowKnotCrystal">
+              <p>Bow-Knot Crystal</p>
+            </NavLink>
+            <NavLink to="/3DShellFlower">
+              <p>3D Shell Flower</p>
+            </NavLink>
+            <NavLink to="/PinkCrystalStone">
+              <p>Pink Crystal Stone</p>
+            </NavLink>
+            <NavLink to="/PearlBeads">
+              <p>Pearl Beads </p>
+            </NavLink>
+            <NavLink to="/3DMeatlAlloyStare">
+              <p>3D Metal Alloy Star Bead</p>
+            </NavLink>
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <p>NAIL ART KIT</p>
-
+          <NavLink to="/AllArtKit">
+            <p>NAIL ART KIT</p>
+          </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
           <div className="nav-artkit">
-            <p>Kit with Traning</p>
-
-            <p>Kit without Traning</p>
+            <NavLink to="/KitWithTranning">
+              <p>Kit with Traning</p>
+            </NavLink>
+            <NavLink to="/KitWithoutTranning">
+              <p>Kit without Traning</p>
+            </NavLink>
           </div>
         </div>
         <div className="bottom-nav-new-in">
-          <p>NEW IN</p>
-
+          <NavLink to="/AllNewIn">
+            <p>NEW IN</p>
+          </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
           <div className="nav-newin">
             <div className="nav-title">
-              <img src={img1} alt="" />
-              <p>GLAM Buffing Machine</p>
+              <NavLink to="/GLAMBuffingMachine">
+                <img src={img1} alt="" />
+                <p>GLAM Buffing Machine</p>
+              </NavLink>
             </div>
             <div className="nav-title">
-              <img src={img2} alt="" />
-              <p>LYN Nail Buffing</p>
+              <NavLink to="/GLAMuvLEDLamp">
+                <img src={img2} alt="" />
+                <p>LYN Nail Buffing</p>
+              </NavLink>
             </div>
             <div className="nav-title">
               <img src={img3} alt="" />
-              <p>GLAM UV LED Lamp</p>
+              <NavLink to="/LYNNailBuffing">
+                <p>GLAM UV LED Lamp</p>
+              </NavLink>
             </div>
           </div>
         </div>
         <div className="nav-offer-img">
-          <img src={logo3} alt="" />
+          <NavLink to="/">
+            <img src={logo3} alt="" />
+          </NavLink>
         </div>
       </div>
     </>
