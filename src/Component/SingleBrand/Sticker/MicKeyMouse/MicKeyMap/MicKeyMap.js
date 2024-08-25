@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { NailContext } from "../../../../../Context/ProductContext";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
 
 const MicKeyMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, MickeyMouseStickers } = useContext(NailContext);
+  // console.log(MickeyMouseStickers);
 
-export default MicKeyMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {MickeyMouseStickers.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default MicKeyMap;

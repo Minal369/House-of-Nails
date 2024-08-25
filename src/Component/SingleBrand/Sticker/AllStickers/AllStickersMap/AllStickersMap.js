@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
+import { NailContext } from "../../../../../Context/ProductContext";
 
 const AllStickersMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, Stickers } = useContext(NailContext);
+  // console.log(Stickers);
 
-export default AllStickersMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {Stickers.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default AllStickersMap;

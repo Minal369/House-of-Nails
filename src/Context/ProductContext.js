@@ -22,6 +22,13 @@ const initialState = {
   KayBeauty: [],
   Faces: [],
   Colorbar: [],
+  Stickers: [],
+  Letters: [],
+  MickeyMouseStickers: [],
+  FlowerStickers: [],
+  FruitStickers: [],
+  LeafyModernStickers: [],
+  ThreeDStickers: [],
 };
 
 const AppProvider = ({ children }) => {

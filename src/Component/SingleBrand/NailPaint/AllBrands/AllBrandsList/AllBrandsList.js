@@ -1,6 +1,6 @@
-import React from 'react'
-import AllBrandsMap from '../AllBrandsMap/AllBrandsMap'
-import FilterSection from '../../../../FilterSection/FilterSection'
+import React from "react";
+import AllBrandsMap from "../AllBrandsMap/AllBrandsMap";
+import FilterSection from "../../../../FilterSection/FilterSection";
 import img1 from "../../../../../img/AllBrands.jpg";
 
 const AllBrandsList = () => {
@@ -20,7 +20,7 @@ const AllBrandsList = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AllBrandsList
+export default AllBrandsList;

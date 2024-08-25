@@ -47,6 +47,35 @@ const productReducer = (state, action) => {
         // console.log(mixedPD.title);
         return mixedPD.title === "Colorbar";
       });
+      const stickers = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.category === "Stickers";
+      });
+      const letter = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "Letters";
+      });
+      const mickey = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "MickeyMouseStickers";
+      });
+      const flowers = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "FlowerStickers";
+      });
+      const fruit = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "FruitStickers";
+      });
+      const leafymodern = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "LeafyModernStickers";
+      });
+      const threedsticker = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "ThreeDStickers";
+      });
+
       return {
         ...state,
         isLoading: false,
@@ -61,6 +90,13 @@ const productReducer = (state, action) => {
         KayBeauty: kaybeauty,
         Faces: face,
         Colorbar: colorbar,
+        Stickers: stickers,
+        Letters: letter,
+        MickeyMouseStickers: mickey,
+        FlowerStickers: flowers,
+        FruitStickers: fruit,
+        LeafyModernStickers: leafymodern,
+        ThreeDStickers: threedsticker,
       };
 
     case "API_ERROR":
