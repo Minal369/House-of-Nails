@@ -75,6 +75,42 @@ const productReducer = (state, action) => {
         // console.log(mixedPD.title);
         return mixedPD.title === "ThreeDStickers";
       });
+      const toolkit = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.category === "Toolkit";
+      });
+      const flatclipper = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "FlatNailClippers";
+      });
+      const obliqueclipper = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "ObliqueNailClippers";
+      });
+      const smallclipper = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "SmallNailClippers";
+      });
+      const deadskinplier = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "DeadSkinPlier";
+      });
+      const nailfile = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "NailFile";
+      });
+      const doublepick = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "DoublePick";
+      });
+      const deadskinpush = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "DeadSkinPush";
+      });
+      const deadskinshovel = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "DeadSkinShovel";
+      });
 
       return {
         ...state,
@@ -97,6 +133,15 @@ const productReducer = (state, action) => {
         FruitStickers: fruit,
         LeafyModernStickers: leafymodern,
         ThreeDStickers: threedsticker,
+        Toolkit: toolkit,
+        FlatNailClippers: flatclipper,
+        ObliqueNailClippers: obliqueclipper,
+        SmallNailClippers: smallclipper,
+        DeadSkinPlier: deadskinplier,
+        NailFile: nailfile,
+        DoublePick: doublepick,
+        DeadSkinPush: deadskinpush,
+        DeadSkinShovel: deadskinshovel,
       };
 
     case "API_ERROR":

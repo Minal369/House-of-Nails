@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { NailContext } from "../../../../../Context/ProductContext";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
 
 const SmallClippersMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, SmallNailClippers } = useContext(NailContext);
+  // console.log(SmallNailClippers);
 
-export default SmallClippersMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {SmallNailClippers.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default SmallClippersMap;

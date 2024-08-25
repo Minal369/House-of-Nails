@@ -29,6 +29,15 @@ const initialState = {
   FruitStickers: [],
   LeafyModernStickers: [],
   ThreeDStickers: [],
+  Toolkit: [],
+  FlatNailClippers: [],
+  ObliqueNailClippers: [],
+  SmallNailClippers: [],
+  DeadSkinPlier: [],
+  NailFile: [],
+  DoublePick: [],
+  DeadSkinPush: [],
+  DeadSkinShovel: [],
 };
 
 const AppProvider = ({ children }) => {
