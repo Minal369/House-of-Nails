@@ -45,7 +45,7 @@ const AllProductsLists = () => {
         <div className="allpdSlick">
           <div className="slickHomepage">
             <Slider
-              autoplay={false}
+              autoplay={true}
               autoplayspeed={1000}
               dots={true}
               dotsClass="slick-dots line-indicator"
@@ -75,9 +75,9 @@ const AllProductsLists = () => {
             </Slider>
           </div>
         </div>
-          <div className="product-title">
-            <p>ALL PRODUCTS</p>
-          </div>
+        <div className="product-title">
+          <p>ALL PRODUCTS</p>
+        </div>
         <div className="allfilterpd">
           <div className="sidebarfilter">
             <FilterSection />

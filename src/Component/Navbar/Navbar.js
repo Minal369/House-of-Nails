@@ -119,7 +119,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <NavLink to="/AllStickers">
+          <NavLink to="/AllStickers" style={{ color: "inherit" }}>
             <p>STICKERS</p>
           </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
@@ -145,7 +145,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <NavLink to="/AllToolkit">
+          <NavLink to="/AllToolkit" style={{ color: "inherit" }}>
             <p>TOOL KIT</p>
           </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
@@ -177,7 +177,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <NavLink to="/AllJwellery">
+          <NavLink to="/AllJwellery" style={{ color: "inherit" }}>
             <p>JWELLERY</p>
           </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
@@ -203,7 +203,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="bottom-nav-brand">
-          <NavLink to="/AllArtKit">
+          <NavLink to="/AllArtKit" style={{ color: "inherit" }}>
             <p>NAIL ART KIT</p>
           </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
@@ -217,7 +217,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="bottom-nav-new-in">
-          <NavLink to="/AllNewIn">
+          <NavLink to="/AllNewIn" style={{ color: "inherit" }}>
             <p>NEW IN</p>
           </NavLink>
           <i className="fa-solid fa-chevron-down"></i>
