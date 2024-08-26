@@ -38,6 +38,13 @@ const initialState = {
   DoublePick: [],
   DeadSkinPush: [],
   DeadSkinShovel: [],
+  Jwellery: [],
+  MetalNailsBeads: [],
+  BowKnot: [],
+  ThreeDShellFlower: [],
+  PinkCrystalStone: [],
+  PearlBeads: [],
+  ThreeDStarBead: [],
 };
 
 const AppProvider = ({ children }) => {

@@ -88,9 +88,9 @@ function App() {
           <Route path="/MetalNailsBeads" element={<MetalBeadsList />} />
           <Route path="/BowKnotCrystal" element={<BowKnotList />} />
           <Route path="/3DShellFlower" element={<ThreeDShellFlowerList />} />
-          <Route path="/PinkCrystalStone" element={<PearlBeadsList />} />
-          <Route path="/PearlBeads" element={<ThreeDStarList />} />
-          <Route path="/3DMeatlAlloyStare" element={<PinkStoneList />} />
+          <Route path="/PinkCrystalStone" element={<PinkStoneList />} />
+          <Route path="/PearlBeads" element={<PearlBeadsList />} />
+          <Route path="/3DMeatlAlloyStare" element={<ThreeDStarList />} />
           <Route path="/AllArtKit" element={<AllArtKitList />} />
           <Route path="/KitWithTranning" element={<KitwithTraningList />} />
           <Route path="/KitWithoutTranning" element={<KitwithoutTraningList />}/>

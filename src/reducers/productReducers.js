@@ -111,6 +111,34 @@ const productReducer = (state, action) => {
         // console.log(mixedPD.title);
         return mixedPD.title === "DeadSkinShovel";
       });
+      const jwellery = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.category === "Jwellery";
+      });
+      const metalbeads = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "MetalNailsBeads";
+      });
+      const bowknot = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "BowKnot";
+      });
+      const threedflower = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "ThreeDShellFlower";
+      });
+      const pinkstones = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "PinkCrystalStone";
+      });
+      const pearlbead = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "PearlBeads";
+      });
+      const threedstars = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "ThreeDStarBead";
+      });
 
       return {
         ...state,
@@ -142,6 +170,13 @@ const productReducer = (state, action) => {
         DoublePick: doublepick,
         DeadSkinPush: deadskinpush,
         DeadSkinShovel: deadskinshovel,
+        Jwellery: jwellery,
+        MetalNailsBeads: metalbeads,
+        BowKnot: bowknot,
+        ThreeDShellFlower: threedflower,
+        PinkCrystalStone: pinkstones,
+        PearlBeads: pearlbead,
+        ThreeDStarBead: threedstars,
       };
 
     case "API_ERROR":
