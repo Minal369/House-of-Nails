@@ -1,11 +1,20 @@
-import React from 'react'
-
+import React, { useContext } from "react";
+import { NailContext } from "../../../../../Context/ProductContext";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
 const AllNewInMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, NewIn } = useContext(NailContext);
+  // console.log(NewIn);
 
-export default AllNewInMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {NewIn.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default AllNewInMap;

@@ -139,6 +139,35 @@ const productReducer = (state, action) => {
         // console.log(mixedPD.title);
         return mixedPD.title === "ThreeDStarBead";
       });
+      const artkit = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.category === "ArtKit";
+      });
+      const kitwithoutT = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "KitwithoutTraning";
+      });
+      const kitwithT = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "KitwithTraning";
+      });
+      const newin = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.category === "NewIn";
+      });
+      const glambuffmc = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "GLAMBuffingMachine";
+      });
+      const lynbuff = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "LYNNailBuffing";
+      });
+      const glamuvled = action.payload.filter((mixedPD) => {
+        // console.log(mixedPD.title);
+        return mixedPD.title === "GLAMUVLEDLamp";
+      });
+     
 
       return {
         ...state,
@@ -177,6 +206,13 @@ const productReducer = (state, action) => {
         PinkCrystalStone: pinkstones,
         PearlBeads: pearlbead,
         ThreeDStarBead: threedstars,
+        ArtKit: artkit,
+        KitwithoutTraning: kitwithoutT,
+        KitwithTraning: kitwithT,
+        NewIn: newin,
+        GLAMBuffingMachine: glambuffmc,
+        LYNNailBuffing: lynbuff,
+        GLAMUVLEDLamp: glamuvled,
       };
 
     case "API_ERROR":

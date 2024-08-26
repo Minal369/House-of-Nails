@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { NailContext } from "../../../../../Context/ProductContext";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
 
 const LYNBuffingMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, LYNNailBuffing } = useContext(NailContext);
+  // console.log(LYNNailBuffing);
 
-export default LYNBuffingMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {LYNNailBuffing.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default LYNBuffingMap;

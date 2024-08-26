@@ -229,14 +229,14 @@ const Navbar = () => {
               </NavLink>
             </div>
             <div className="nav-title">
-              <NavLink to="/GLAMuvLEDLamp">
+              <NavLink to="/LYNNailBuffing">
                 <img src={img2} alt="" />
                 <p>LYN Nail Buffing</p>
               </NavLink>
             </div>
             <div className="nav-title">
-              <img src={img3} alt="" />
-              <NavLink to="/LYNNailBuffing">
+              <NavLink to="/GLAMuvLEDLamp">
+                <img src={img3} alt="" />
                 <p>GLAM UV LED Lamp</p>
               </NavLink>
             </div>

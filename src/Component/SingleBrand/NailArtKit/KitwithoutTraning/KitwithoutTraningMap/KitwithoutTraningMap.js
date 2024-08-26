@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { NailContext } from "../../../../../Context/ProductContext";
+import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
 
 const KitwithoutTraningMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, KitwithoutTraning } = useContext(NailContext);
+  // console.log(KitwithoutTraning);
 
-export default KitwithoutTraningMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {KitwithoutTraning.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default KitwithoutTraningMap;

@@ -46,6 +46,7 @@ import KitwithTraningList from "./Component/SingleBrand/NailArtKit/KitwithTranin
 import GLAMBuffingList from "./Component/SingleBrand/NewIn/GLAMBuffingMachine/GLAMBuffingList/GLAMBuffingList";
 import UVLampList from "./Component/SingleBrand/NewIn/GLAMuvLEDLamp/UVLampList/UVLampList";
 import LYNBuffingList from "./Component/SingleBrand/NewIn/LYNNailBuffing/LYNBuffingList/LYNBuffingList";
+import AllNewInList from "./Component/SingleBrand/NewIn/AllNewIn/AllNewInList/AllNewInList";
 
 function App() {
   return (
@@ -93,11 +94,14 @@ function App() {
           <Route path="/3DMeatlAlloyStare" element={<ThreeDStarList />} />
           <Route path="/AllArtKit" element={<AllArtKitList />} />
           <Route path="/KitWithTranning" element={<KitwithTraningList />} />
-          <Route path="/KitWithoutTranning" element={<KitwithoutTraningList />}/>
-          <Route path="/AllNewIn" element={<AllArtKitList/>}/>
-          <Route path="/GLAMBuffingMachine" element={<GLAMBuffingList/>}/>
-          <Route path="/GLAMuvLEDLamp" element={<UVLampList/>}/>
-          <Route path="/LYNNailBuffing" element={<LYNBuffingList/>}/>
+          <Route
+            path="/KitWithoutTranning"
+            element={<KitwithoutTraningList />}
+          />
+          <Route path="/AllNewIn" element={<AllNewInList />} />
+          <Route path="/GLAMBuffingMachine" element={<GLAMBuffingList />} />
+          <Route path="/LYNNailBuffing" element={<LYNBuffingList />} />
+          <Route path="/GLAMuvLEDLamp" element={<UVLampList />} />
         </Routes>
         <Footer />
       </Router>

@@ -45,6 +45,13 @@ const initialState = {
   PinkCrystalStone: [],
   PearlBeads: [],
   ThreeDStarBead: [],
+  ArtKit: [],
+  KitwithoutTraning: [],
+  KitwithTraning: [],
+  NewIn: [],
+  GLAMBuffingMachine: [],
+  LYNNailBuffing: [],
+  GLAMUVLEDLamp: [],
 };
 
 const AppProvider = ({ children }) => {
