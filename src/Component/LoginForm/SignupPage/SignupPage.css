@@ -1,0 +1,141 @@
+.main-register {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+  }
+  
+  .register-container {
+    /* border: 1px solid black; */
+    width: 62.5%;
+    height: 750px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    background: linear-gradient(to right, #f8458a 50%, rgb(255, 255, 255) 50%);
+  }
+  
+  .register-transparent {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 32px -16px rgb(58, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-img-left,
+  .register-right {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 80%;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 32px -16px rgb(58, 57, 57);
+  }
+  
+  .register-account {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+  
+  .register-account p {
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-left: -15%;
+  }
+  
+  .register-account span {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: -88px;
+  }
+  
+  .register-boyimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .register-boyimg img {
+    width: 100%;
+    height: 380px;
+  }
+  
+  .register-center {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 15% 50px;
+  }
+  
+  .register-title {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12%;
+    margin-bottom: 8%;
+  }
+  
+  .register-title p {
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 750;
+    color: #f8458a;
+  }
+  
+  .register-first-name h5,
+  .register-last-name h5,
+  .register-email h5,
+  .register-password h5,
+  .register-conform-password h5 {
+    /* border: 1px solid black; */
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    color: #000;
+    margin-top: -10px;
+    left: 56%;
+    z-index: 1;
+    background-color: #fff;
+  }
+  
+  .register-first-name input,
+  .register-last-name input,
+  .register-email input,
+  .register-password input,
+  .register-conform-password input {
+    position: relative;
+    width: 100%;
+    border: 0;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 0px 1px 8px -1px rgba(255, 182, 193, 1);
+    -webkit-box-shadow: 0px 1px 8px -1px rgba(255, 182, 193, 1);
+    -moz-box-shadow: 0px 1px 8px -1px rgba(255, 182, 193, 1);
+  }
+  
+  .register-btn button {
+    border: 0;
+    outline: 0;
+    /* border: 1px solid black; */
+    padding: 5px 25px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 2.5px;
+    background-color: #f8458a;
+    text-transform: uppercase;
+  }
+  

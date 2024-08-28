@@ -54,17 +54,18 @@ const Navbar = () => {
       {/*--------------------- middle navbar -------------------------*/}
 
       <div className="mid-nav-container">
-        <img src={logo1} alt="" />
-
+        <NavLink to="/MHouse">
+          <img src={logo1} alt="" />
+        </NavLink>
         <div className="mid-nav-search">
           <i className="fa-solid fa-magnifying-glass icon"></i>
           <input type="text" placeholder="Search for Nail-Paints" />
         </div>
-
+        <NavLink to="/LoginPage">
         <div className="mid-nav-signin">
           <i className="fa-regular fa-user"></i>
         </div>
-
+        </NavLink>
         <div className="mid-nav-wishlist">
           <i className="fa-regular fa-heart"></i>
         </div>

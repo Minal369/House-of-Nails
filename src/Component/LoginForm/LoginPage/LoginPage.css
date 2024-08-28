@@ -1,0 +1,133 @@
+.main-login {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+  }
+  
+  .login-container {
+    /* border: 1px solid black; */
+    width: 62.5%;
+    height: 750px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #f8458a 50%);
+  }
+  
+  .login-transparent {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 32px -16px rgb(58, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-left,
+  .login-img-right {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 80%;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 32px -16px rgb(58, 57, 57);
+  }
+  
+  .login-center {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+    padding: 15% 50px;
+  }
+  
+  .loginimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginimg img {
+    width: 150px;
+    object-fit: fill;
+  }
+  
+  .login-email,
+  .login-password {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .login-email input,
+  .login-password input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 0px 5px;
+  }
+  
+  .loginbtn button {
+    border: 0;
+    outline: 0;
+    /* border: 1px solid black; */
+    padding: 5px 25px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 2.5px;
+    background-color: #fc2779;
+    text-transform: uppercase;
+  }
+  
+  .login-account {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -5%;
+  }
+  
+  .login-account h6 {
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  
+  .login-account span {
+    color: #fc2779;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .login-img-right p{
+     /* border: 1px solid black; */
+     font-size: 18px;
+     font-weight: 600;
+     color: #fff;
+     width: 35%;
+     margin-top: 3%;
+     margin-left: 3%;
+  }
+  
+  .login-mobimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .login-mobimg img {
+    width: 100%;
+    height: 380px;
+  }
+  

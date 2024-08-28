@@ -47,6 +47,9 @@ import GLAMBuffingList from "./Component/SingleBrand/NewIn/GLAMBuffingMachine/GL
 import UVLampList from "./Component/SingleBrand/NewIn/GLAMuvLEDLamp/UVLampList/UVLampList";
 import LYNBuffingList from "./Component/SingleBrand/NewIn/LYNNailBuffing/LYNBuffingList/LYNBuffingList";
 import AllNewInList from "./Component/SingleBrand/NewIn/AllNewIn/AllNewInList/AllNewInList";
+import MHouse from "./Component/MHouse/MHouse";
+import LoginPage from "./Component/LoginForm/LoginPage/LoginPage";
+import SignupPage from "./Component/LoginForm/SignupPage/SignupPage";
 
 function App() {
   return (
@@ -58,6 +61,9 @@ function App() {
           <Route path="/Store&Events" element={<NStoreEvent />} />
           <Route path="/GiftCard" element={<NGiftCard />} />
           <Route path="/Help" element={<NHelp />} />
+          <Route path="/LoginPage" element={<LoginPage />} />
+          <Route path="/SignupPage" element={<SignupPage />} />
+          <Route path="/MHouse" element={<MHouse />} />
           <Route path="/AllPD" element={<AllProductsList />} />
           <Route path="/Brand" element={<AllBrandsList />} />
           <Route path="/SugerPoP" element={<SugerpopList />} />
@@ -94,10 +100,7 @@ function App() {
           <Route path="/3DMeatlAlloyStare" element={<ThreeDStarList />} />
           <Route path="/AllArtKit" element={<AllArtKitList />} />
           <Route path="/KitWithTranning" element={<KitwithTraningList />} />
-          <Route
-            path="/KitWithoutTranning"
-            element={<KitwithoutTraningList />}
-          />
+          <Route path="/KitWithoutTranning" element={<KitwithoutTraningList />}/>
           <Route path="/AllNewIn" element={<AllNewInList />} />
           <Route path="/GLAMBuffingMachine" element={<GLAMBuffingList />} />
           <Route path="/LYNNailBuffing" element={<LYNBuffingList />} />
