@@ -23,7 +23,7 @@ const OfferMHouse = () => {
           </div>
         </NavLink>
         {/* -----------Combo-nail-paints------------- */}
-        <NavLink to="/OfferComboNail">
+        <NavLink to="/OfferComboNails">
           <div className="combo-nail-offer">
             <img src={ComboNailsOffer} alt="" />
           </div>
@@ -38,7 +38,7 @@ const OfferMHouse = () => {
         </NavLink>
         {/* -----------NailsExtensions------------- */}
         <NavLink to="/OfferExtension">
-          <div className="OfferNailsExtensions">
+          <div className="OfferExtensions">
             <img src={NailsExtensions} alt="" />
           </div>
         </NavLink>
@@ -50,13 +50,13 @@ const OfferMHouse = () => {
             </NavLink>
           </div>
           <div className="offerCrystal">
-            <NavLink to="/OfferCrystal">
+            <NavLink to="/OfferCrystals">
               <img src={OfferCrystal} alt="" />
             </NavLink>
           </div>
         </div>
         {/*-----------------3dNailArt------------ */}
-        <NavLink to="/Offer3DGlitter">
+        <NavLink to="/Offer3DGlitters">
           <div className="Offer3D">
             <div className="offer3dNailArt">
               <img src={Offer3DnailArt} alt="" />
@@ -64,7 +64,7 @@ const OfferMHouse = () => {
           </div>
         </NavLink>
         {/*-----------------OfferStripingTapes------------ */}
-        <NavLink to="/OfferStripingTape">
+        <NavLink to="/OfferStripingTapes">
           <div className="offerStripinTapes">
             <div className="OffStripingTapes">
               <img src={OfferStripsTaps} alt="" />
@@ -72,7 +72,7 @@ const OfferMHouse = () => {
           </div>
         </NavLink>
         {/*-----------------OfferToolkit------------ */}
-        <NavLink to="/OfferToolKit">
+        <NavLink to="/OfferToolKits">
           <div className="offerTookits">
             <div className="OffToolKits">
               <img src={OfferToolkit} alt="" />
@@ -80,7 +80,7 @@ const OfferMHouse = () => {
           </div>
         </NavLink>
         {/*-----------------OfferGiftCard------------ */}
-        <NavLink to="/Giftcard">
+        <NavLink to="/GiftCard">
           <div className="offerBaner">
             <div className="OfferGiftCard">
               <img src={OfferGiftCard} alt="" />

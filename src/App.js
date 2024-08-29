@@ -50,6 +50,16 @@ import AllNewInList from "./Component/SingleBrand/NewIn/AllNewIn/AllNewInList/Al
 import MHouse from "./Component/MHouse/MHouse";
 import LoginPage from "./Component/LoginForm/LoginPage/LoginPage";
 import SignupPage from "./Component/LoginForm/SignupPage/SignupPage";
+import  OfferMHouse from "./Component/OfferMHouse/OfferMHouse"
+import OfferAllPDList from "./Component/Offers/OfferAllPD/OfferAllPDList/OfferAllPDList";
+import OfferComboNailsList from "./Component/Offers/OfferComboNails/OfferComboNailsList/OfferComboNailsList";
+import OfferCrystalsList from "./Component/Offers/OfferCrystals/OfferCrystalsList/OfferCrystalsList";
+import OfferExtensionsList from "./Component/Offers/OfferExtensions/OfferExtensionsList/OfferExtensionsList";
+import OfferNailRemoverList from "./Component/Offers/OfferNailRemover/OfferNailRemoverList/OfferNailRemoverList";
+import OfferStickerList from "./Component/Offers/OfferSticker/OfferStickerList/OfferStickerList";
+import OfferStripingTapesList from "./Component/Offers/OfferStripingTapes/OfferStripingTapesList/OfferStripingTapesList";
+import OfferTDGlittersList from "./Component/Offers/OfferTDGlitters/OfferTDGlittersList/OfferTDGlittersList";
+import OfferToolKitsList from "./Component/Offers/OfferToolKits/OfferToolKitsList/OfferToolKitsList";
 
 function App() {
   return (
@@ -63,7 +73,7 @@ function App() {
           <Route path="/Help" element={<NHelp />} />
           <Route path="/LoginPage" element={<LoginPage />} />
           <Route path="/SignupPage" element={<SignupPage />} />
-          <Route path="/MHouse" element={<MHouse />} />
+          <Route path="/" element={<MHouse />} />
           <Route path="/AllPD" element={<AllProductsList />} />
           <Route path="/Brand" element={<AllBrandsList />} />
           <Route path="/SugerPoP" element={<SugerpopList />} />
@@ -105,6 +115,16 @@ function App() {
           <Route path="/GLAMBuffingMachine" element={<GLAMBuffingList />} />
           <Route path="/LYNNailBuffing" element={<LYNBuffingList />} />
           <Route path="/GLAMuvLEDLamp" element={<UVLampList />} />
+          <Route path="/OfferPage" element={<OfferMHouse />} />
+          <Route path="/OfferAllPD" element={<OfferAllPDList/>} />
+          <Route path="/OfferComboNails" element={<OfferComboNailsList />} />
+          <Route path="/OfferNailRemover" element={<OfferNailRemoverList />} />
+          <Route path="/OfferExtensions" element={<OfferExtensionsList />} />
+          <Route path="/OfferSticker" element={<OfferStickerList />} />
+          <Route path="/OfferCrystals" element={<OfferCrystalsList />} />
+          <Route path="/Offer3DGlitters" element={<OfferTDGlittersList />} />
+          <Route path="/OfferStripingTapes" element={<OfferStripingTapesList />} />
+          <Route path="/OfferToolKits" element={<OfferToolKitsList />} />
         </Routes>
         <Footer />
       </Router>

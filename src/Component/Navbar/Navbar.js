@@ -54,7 +54,7 @@ const Navbar = () => {
       {/*--------------------- middle navbar -------------------------*/}
 
       <div className="mid-nav-container">
-        <NavLink to="/MHouse">
+        <NavLink to="/">
           <img src={logo1} alt="" />
         </NavLink>
         <div className="mid-nav-search">
@@ -244,7 +244,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav-offer-img">
-          <NavLink to="/">
+          <NavLink to="/OfferPage">
             <img src={logo3} alt="" />
           </NavLink>
         </div>
