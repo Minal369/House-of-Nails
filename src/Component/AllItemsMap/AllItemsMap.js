@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import AllItemsLayout from "../AllItemsLayout/AllItemsLayout";
-import { NailContext } from "../../Context/ProductContext";
+import { useMinalContext } from "../../Context/ProductContext";
 
 
 const AllItemsMap = () => {
-    const {isLoading,  NailProducts} = useContext(NailContext)
-    console.log(NailProducts);
+    const {isLoading,  allProduct} = useMinalContext()
+    // console.log(NailProducts);
     
 
     if (isLoading) {
@@ -13,7 +13,7 @@ const AllItemsMap = () => {
     }
   return (
     <>
-      {NailProducts.map((mixedPD) => {
+      {allProduct.map((mixedPD) => {
         return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
       })}
     </>

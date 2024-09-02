@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
+import { useOfferContext } from "../../../../Context/OfferContext";
 
 const OfferComboNailsMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, ComboNailPaints } = useOfferContext();
+  // console.log(ComboNailPaints);
 
-export default OfferComboNailsMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {ComboNailPaints.map((mixedPD) => {
+        return <AllItemsLayout key={mixedPD.id} {...mixedPD} />;
+      })}
+    </>
+  );
+};
+
+export default OfferComboNailsMap;

@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import { useOfferContext } from "../../../../Context/OfferContext";
+import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
 
 const OfferNailRemoverMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, NailsRemover } = useOfferContext();
+  // console.log(NailsRemover);
 
-export default OfferNailRemoverMap
+  if (isLoading) {
+    return <div>....Loading</div>;
+  }
+  return (
+    <>
+      {NailsRemover.map((curElem) => {
+        return <AllItemsLayout key={curElem.id} {...curElem} />;
+      })}
+    </>
+  );
+};
+
+export default OfferNailRemoverMap;

@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { NailContext } from "../../../../../Context/ProductContext";
+import React from "react";
+import { useMinalContext } from "../../../../../Context/ProductContext";
 import AllItemsLayout from "../../../../AllItemsLayout/AllItemsLayout";
 
 const AllBrandsMap = () => {
-  const { isLoading, Brand } = useContext(NailContext);
+  const { isLoading, Brand } = useMinalContext();
   // console.log(Brand);
 
   if (isLoading) {

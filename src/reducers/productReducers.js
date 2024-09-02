@@ -172,7 +172,7 @@ const productReducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        NailProducts: action.payload,
+        allProduct: action.payload,
         Brand: brand,
         SugerPOP: sugerpop,
         Nykaa: nykaa,
@@ -223,9 +223,9 @@ const productReducer = (state, action) => {
       };
 
     default:
-      break;
+      return state;    
   }
-  return state;
+  
 };
 
 export default productReducer;

@@ -37,7 +37,7 @@ const OfferMHouse = () => {
           </div>
         </NavLink>
         {/* -----------NailsExtensions------------- */}
-        <NavLink to="/OfferExtension">
+        <NavLink to="/OfferExtensions">
           <div className="OfferExtensions">
             <img src={NailsExtensions} alt="" />
           </div>

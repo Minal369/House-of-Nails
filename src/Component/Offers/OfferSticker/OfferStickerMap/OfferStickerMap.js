@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import { useOfferContext } from "../../../../Context/OfferContext";
+import AllItemsLayout from "../../../AllItemsLayout/AllItemsLayout";
 
 const OfferStickerMap = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { isLoading, NailStickers } = useOfferContext();
+  // console.log(NailStickers);
+  if (isLoading) {
+    return <div>... loading</div>;
+  }
 
-export default OfferStickerMap
+  return (
+    <>
+      {NailStickers.map((curElem) => {
+        return <AllItemsLayout key={curElem.id} {...curElem} />;
+      })}
+    </>
+  );
+};
+
+export default OfferStickerMap;

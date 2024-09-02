@@ -6,7 +6,7 @@ import axios from "axios";
 const NailContext = createContext();
 
 const API =
-  "https://raw.githubusercontent.com/Minal369/API-Nails-Data/main/NailProducts.json";
+  "https://all-product-api.onrender.com/allProduct";
 
 const initialState = {
   isLoading: false,
@@ -61,9 +61,9 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "SET_LOADING" });
     try {
       const res = await axios.get(url);
-      const NailProducts = res.data;
+      const allProduct = res.data;
       // console.log(NailProducts);
-      dispatch({ type: "SET_API_DATA", payload: NailProducts.allProduct });
+      dispatch({ type: "SET_API_DATA", payload: allProduct });
     } catch (error) {
       dispatch({ type: "API_ERROR" });
     }
