@@ -60,6 +60,7 @@ import OfferStickerList from "./Component/Offers/OfferSticker/OfferStickerList/O
 import OfferStripingTapesList from "./Component/Offers/OfferStripingTapes/OfferStripingTapesList/OfferStripingTapesList";
 import OfferTDGlittersList from "./Component/Offers/OfferTDGlitters/OfferTDGlittersList/OfferTDGlittersList";
 import OfferToolKitsList from "./Component/Offers/OfferToolKits/OfferToolKitsList/OfferToolKitsList";
+import AllpdDetail from "./Pages/AllpdDetail";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
           <Route path="/SignupPage" element={<SignupPage />} />
           <Route path="/" element={<MHouse />} />
           <Route path="/AllPD" element={<AllProductsList />} />
+          <Route path="/SingleProduct/:id" element={<AllpdDetail />} />
           <Route path="/Brand" element={<AllBrandsList />} />
           <Route path="/SugerPoP" element={<SugerpopList />} />
           <Route path="/Nykaa" element={<NykaaList />} />

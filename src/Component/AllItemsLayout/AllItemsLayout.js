@@ -1,11 +1,13 @@
 import React from "react";
 import "./AllItemsLayout.css";
 import Stars from "../Stars/Stars";
+import {NavLink} from "react-router-dom";
 
 const AllItemsLayout = (mixedPD) => {
-  const { imgSrc, titles, MRP, mrp, offer, price, rating } = mixedPD;
+  const { id, imgSrc, titles, MRP, mrp, offer, price, rating } = mixedPD;
   return (
     <>
+    <NavLink to={`/SingleProduct/${id}`} style={{ color: "inherit" }}>
       <div className="productlists-cards-container">
         <div className="cardlayout">
           <i className="fa-regular fa-heart hearts"></i>
@@ -37,6 +39,7 @@ const AllItemsLayout = (mixedPD) => {
           </div>
         </div>
       </div>
+      </NavLink>
     </>
   );
 };

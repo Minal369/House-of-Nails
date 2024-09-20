@@ -1,65 +1,94 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AllpdDetails.css";
-import img1 from "../../img/girl-img-4.jpg";
+import girlimg from "../../img/girl-img-4.jpg";
+import { useMinalContext } from "../../Context/ProductContext";
+import { useParams } from "react-router-dom";
+import Stars from "../Stars/Stars";
+import AddToBag from "../AddToBag/AddToBag";
+
+const API = "https://all-product-api.onrender.com/allProduct";
 
 const AllpdDetails = () => {
+  const { getSingleProduct, isSingleLoading, SingleProducts } =
+    useMinalContext();
+  console.log(SingleProducts);
+  const { id } = useParams();
+  // console.log(id);
+
+  const {
+    img1,
+    img2,
+    img3,
+    img4,
+    imgSrc,
+    description,
+    Info,
+    info,
+    Benefits,
+    benefits,
+    Addinfo,
+    addinfo,
+    Howtouse,
+    howtouse,
+    howtoapply,
+    Productdetails,
+    productdetails,
+    MRP,
+    mrp,
+    offer,
+    price,
+    rating,
+  } = SingleProducts;
+
+  useEffect(() => {
+    getSingleProduct(`${API}/${id}`);
+  }, [id]);
+
   return (
     <>
-      <ToastContainer
-        position="bottom-center"
-        autoClose={1200}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
       <div className="productdetailscontainer">
         <div className="pdleft">
           <div className="pdimg">
             <div className="img1">
-              <img src={product.img1} alt="" />
+              <img src={img1} alt="" />
             </div>
             <div className="img2">
-              <img src={product.img2} alt="" />
+              <img src={img2} alt="" />
             </div>
             <div className="img3">
-              <img src={product.img3} alt="" />
+              <img src={img3} alt="" />
             </div>
             <div className="img4">
-              <img src={product.img4} alt="" />
+              <img src={img4} alt="" />
             </div>
           </div>
           <div className="mainimg">
-            <img src={product.imgSrc} alt={product.name} />
+            <img src={imgSrc} alt="" />
           </div>
         </div>
         <div className="pdright">
           <div className="topcontainer">
             <div className="pdtitle">
-              <h3>{product.description}</h3>
+              <h3>{description}</h3>
             </div>
             <div className="ratings">
-              <Stars rating={product.rating} />
+              <Stars rating={rating} />
             </div>
             <div className="mainprice">
               <div className="mrptitle">
-                <p>{product.MRP}</p>
+                <p>{MRP}</p>
                 <div className="mrpprice">
-                  <p>{product.mrp}</p>
+                  <p>{mrp}</p>
                 </div>
               </div>
               <div className="mrpmainprice">
                 <p>
-                  <i className="fa-solid fa-indian-rupee-sign rupees"></i>{" "}
-                  {product.price}
+                  <i className="fa-solid fa-indian-rupee-sign rupees"></i>
+                  {price}
                 </p>
               </div>
               <div className="mrpoffer">
-                <p>{product.offer}</p>
+                <p>{offer}</p>
               </div>
             </div>
             <div className="taxline">
@@ -109,25 +138,7 @@ const AllpdDetails = () => {
             }
 
             <div className="addtocardbtn">
-              <div className="addbtn">
-                <button
-                  onClick={() =>
-                    addToCart(
-                      product.id,
-                      product.imgSrc,
-                      product.description,
-                      product.price,
-                      product.MRP,
-                      product.mrp
-                    )
-                  }
-                >
-                  Add To Bag
-                </button>
-              </div>
-              <div className="buybtn">
-                <button>Buy Now</button>
-              </div>
+              <AddToBag Addcard={SingleProducts} />
             </div>
           </div>
           <div className="bottom-container">
@@ -195,43 +206,43 @@ const AllpdDetails = () => {
                 id="description"
               >
                 <div className="desc">
-                  <p>{product.Info}:</p>
+                  <p>{Info}:</p>
                 </div>
                 <div className="info">
-                  <p>{product.info}</p>
-                  <p className="benefitinfoname">{product.Benefits}</p>
-                  <p>{product.benefits}</p>
+                  <p>{info}</p>
+                  <p className="benefitinfoname">{Benefits}</p>
+                  <p>{benefits}</p>
                 </div>
               </div>
               <div className="tab-pane fade Descriptio" id="addinfo">
                 <div className="desc">
-                  <p>{product.Addinfo} :</p>
+                  <p>{Addinfo} :</p>
                 </div>
                 <div className="info">
-                  <p>{product.addinfo}</p>
+                  <p>{addinfo}</p>
                 </div>
               </div>
               <div className="tab-pane fade Description" id="howtoapply">
                 <div className="desc">
-                  <p>{product.Howtouse}:</p>
+                  <p>{Howtouse}:</p>
                 </div>
                 <div className="info">
-                  <p>{product.howtouse}</p> <p>{product.howtoapply}</p>
+                  <p>{howtouse}</p> <p>{howtoapply}</p>
                 </div>
               </div>
               <div className="tab-pane fade Description" id="ingredients">
                 <div className="desc">
-                  <p>{product.Productdetails}:</p>
+                  <p>{Productdetails}:</p>
                 </div>
                 <div className="info">
-                  <p>{product.productdetails}</p>
+                  <p>{productdetails}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="rightimg">
-          <img src={img1} alt="" />
+          <img src={girlimg} alt="" />
         </div>
       </div>
     </>

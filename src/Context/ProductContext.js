@@ -5,8 +5,7 @@ import axios from "axios";
 //  Create Context
 const NailContext = createContext();
 
-const API =
-  "https://all-product-api.onrender.com/allProduct";
+const API = "https://all-product-api.onrender.com/allProduct";
 
 const initialState = {
   isLoading: false,
@@ -52,6 +51,9 @@ const initialState = {
   GLAMBuffingMachine: [],
   LYNNailBuffing: [],
   GLAMUVLEDLamp: [],
+  isSingleLoading: false,
+  SingleProducts: {},
+  isSingleApiError: false,
 };
 
 const AppProvider = ({ children }) => {
@@ -69,12 +71,24 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  // Single Product
+  const getSingleProduct = async (url) => {
+    dispatch({ type: "SET_SINGLE_LOADING" });
+    try {
+      const res = await axios.get(url);
+      const SingleProducts = res.data;
+      dispatch({ type: "SET_SINGLE_DATA", payload: SingleProducts });
+    } catch (error) {
+      dispatch({ type: "SINGLE_API_ERROR" });
+    }
+  };
+
   useEffect(() => {
     getProduct(API);
   }, []);
 
   return (
-    <NailContext.Provider value={{ ...state }}>{children}</NailContext.Provider>
+    <NailContext.Provider value={{ ...state, getSingleProduct }}>{children}</NailContext.Provider>
   );
 };
 

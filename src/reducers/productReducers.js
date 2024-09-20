@@ -222,6 +222,28 @@ const productReducer = (state, action) => {
         isError: true,
       };
 
+      // Single Product
+
+      case "SET_SINGLE_LOADING":
+        return{
+          ...state,
+          isSingleLoading: true,
+        }
+
+        case "SET_SINGLE_DATA": 
+        return{
+          ...state,
+          isSingleLoading: false,
+          SingleProducts: action.payload,
+        }
+
+        case "SINGLE_API_ERROR" :
+          return{
+            ...state,
+            isSingleLoading: false,
+            isSingleApiError: true,
+          }
+
     default:
       return state;    
   }
