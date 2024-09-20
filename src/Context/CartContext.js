@@ -6,11 +6,12 @@ const initialState = {
   cart: [],
   totalItems: "",
   totalPrice: "",
+  shipping_fee: 50000,
 };
 const CartContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const AddToBag = (id, Addcard) => {
-    dispatch({ type: "ADD_TO_BAG", payload: id, Addcard });
+  const AddToBag = (id, quantity, items) => {
+    dispatch({ type: "ADD_TO_BAG", payload: { id, quantity, items } });
   };
   return (
     <CartContext.Provider value={{ ...state, AddToBag }}>

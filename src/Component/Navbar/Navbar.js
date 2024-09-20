@@ -70,10 +70,12 @@ const Navbar = () => {
           <i className="fa-regular fa-heart"></i>
         </div>
 
+        <NavLink to="/cart">
         <div className="mid-nav-shopping">
           <i className="fa-solid fa-bag-shopping bag"></i>
           <span className="count">0</span>
         </div>
+        </NavLink>
       </div>
 
       {/*------------------------ last navbar--------------------------- */}

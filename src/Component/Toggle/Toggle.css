@@ -1,0 +1,32 @@
+.togglebtn {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px -1px #b9b9b9;
+}
+
+.dec {
+  /* border: 1px solid black; */
+  cursor: pointer;
+  padding: 18px 25px;
+}
+
+.input {
+  /* border: 1px solid black; */
+  padding: 14px 25px;
+  color: #e80071;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.inc {
+  /* border: 1px solid black; */
+  padding: 18px 25px;
+  cursor: pointer;
+}
+
+.dec:hover, .inc:hover {
+  background: #e80071;
+  color: #ffffff;
+}

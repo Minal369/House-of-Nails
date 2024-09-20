@@ -11,7 +11,7 @@ const API = "https://all-product-api.onrender.com/allProduct";
 const AllpdDetails = () => {
   const { getSingleProduct, isSingleLoading, SingleProducts } =
     useMinalContext();
-  console.log(SingleProducts);
+  // console.log(SingleProducts);
   const { id } = useParams();
   // console.log(id);
 
@@ -138,7 +138,7 @@ const AllpdDetails = () => {
             }
 
             <div className="addtocardbtn">
-              <AddToBag Addcard={SingleProducts} />
+              <AddToBag items={SingleProducts} />
             </div>
           </div>
           <div className="bottom-container">

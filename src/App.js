@@ -61,6 +61,7 @@ import OfferStripingTapesList from "./Component/Offers/OfferStripingTapes/OfferS
 import OfferTDGlittersList from "./Component/Offers/OfferTDGlitters/OfferTDGlittersList/OfferTDGlittersList";
 import OfferToolKitsList from "./Component/Offers/OfferToolKits/OfferToolKitsList/OfferToolKitsList";
 import AllpdDetail from "./Pages/AllpdDetail";
+import CartSection from "./Pages/CartSection";
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
           <Route path="/Offer3DGlitters" element={<OfferTDGlittersList />} />
           <Route path="/OfferStripingTapes" element={<OfferStripingTapesList />} />
           <Route path="/OfferToolKits" element={<OfferToolKitsList />} />
+          <Route path="/cart" element={<CartSection />} />
         </Routes>
         <Footer />
       </Router>
