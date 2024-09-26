@@ -13,10 +13,10 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <div className="empty-cart">
+      <div className="c-empty-cart">
         <h2>Cart Empty...</h2>
         <i className="fas fa-shopping-cart"></i>
-        <NavLink to="/product">
+        <NavLink to="/AllPD">
           <button>Shop Now</button>
         </NavLink>
       </div>
@@ -25,8 +25,8 @@ const Cart = () => {
 
   return (
     <>
-      <div className="cart-sections">
-        <div className="cart-list">
+      <div className="c-sections">
+        <div className="c-list">
           <p>Items</p>
           <p>Price</p>
           <p>Quantity</p>
@@ -36,7 +36,7 @@ const Cart = () => {
 
         <hr />
 
-        <div className="cart-item-layout">
+        <div className="c-item-layout">
           <Scrollbars>
             {cart.map((curElem) => {
               return (
@@ -50,14 +50,14 @@ const Cart = () => {
 
         <hr />
 
-        <div className="cart-btn-section">
-          <div className="cart-shopping-btn">
+        <div className="c-btn-section">
+          <div className="c-shopping-btn">
             <NavLink to="/product">
               <button>Continue Shopping</button>
             </NavLink>
           </div>
-          <div className="cart-clear-btn">
-            <button onClick={ClearAll} className="remove-btn">
+          <div className="c-clear-btn">
+            <button onClick={ClearAll} className="c-remove-btn">
               Clear All{" "}
             </button>
           </div>
@@ -65,15 +65,15 @@ const Cart = () => {
 
         <hr />
 
-        <div className="cart-price-section">
-          <div className="cart-subtotal-section">
+        <div className="c-price-section">
+          <div className="c-subtotal-section">
             <p>Sub-Total</p>
             <p>
               <FormatPrice price={total_price} />
             </p>
           </div>
 
-          <div className="cart-shipping-section">
+          <div className="c-shipping-section">
             <p>Shipping</p>
             <p>
               <FormatPrice price={shipping_fees} />
@@ -82,7 +82,7 @@ const Cart = () => {
 
           <hr />
 
-          <div className="cart-total-section">
+          <div className="c-total-section">
             <p>Total Amount: </p>
             <p>
               <FormatPrice price={shipping_fees + total_price} />

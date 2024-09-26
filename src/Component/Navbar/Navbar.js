@@ -7,8 +7,12 @@ import img1 from "../../img/buffing-mc.jpg";
 import img2 from "../../img/lyn-nail.jpg";
 import img3 from "../../img/uv-led.jpg";
 import { NavLink } from "react-router-dom";
+import { useCartContext } from "../../Context/CartContext";
 
 const Navbar = () => {
+
+  const {total_item} = useCartContext();
+
   return (
     <>
       {/* ---------------------------Top Navbar----------------------------- */}
@@ -73,7 +77,7 @@ const Navbar = () => {
         <NavLink to="/cart">
         <div className="mid-nav-shopping">
           <i className="fa-solid fa-bag-shopping bag"></i>
-          <span className="count">0</span>
+          <span className="count">{total_item}</span>
         </div>
         </NavLink>
       </div>

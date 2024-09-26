@@ -4,7 +4,7 @@ import FormatPrice from "../Helper/FormatPrice";
 import Toggle from "../Toggle/Toggle";
 import { useCartContext } from "../../Context/CartContext";
 
-const CartItemLayout = ({ id, imgSrc, title, price, quantity }) => {
+const CartItemLayout = ({ id, imgSrc, description, price, quantity }) => {
 
     const {RemoveItem, setDecrease, setIncrease} = useCartContext()
 
@@ -21,7 +21,7 @@ const CartItemLayout = ({ id, imgSrc, title, price, quantity }) => {
       <div className="cart-items">
         <div className="cart-list-items">
           <img src={imgSrc} alt="" />
-          <p>{title}</p>
+          <p>{description}</p>
         </div>
 
         <div className="cart-list-price">

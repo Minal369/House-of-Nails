@@ -24,7 +24,7 @@ const NGiftApps = () => {
               <div className="downloadname1">
                 <p className="downloadname">GET DOWNLOAD LINK VIA SMS</p>
               </div>
-              <div className="input">
+              <div className="N-input">
                 <input type="text" placeholder="Enter Your Mobile Number" />
                 <button>send link</button>
               </div>
